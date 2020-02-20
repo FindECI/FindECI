@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="css/footer.css"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+</h:head>
+<h:body>
+	<f:event type="preRenderView" listener="#{shiroBean.isLogged}"/>
+	<div class="wrapper">
+		<div align="center">
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<img src="images/imglab.png" width="200" height="200"/>
+			<br/>
+			<br/>
+			<h:outputText value="#{msg.labelIngresar}"/>
+			<br/>
+			<br/>
+
+			<h:form id="log" prependId="false">
+				<p:growl id="growl" for="shiro" showDetail="true" sticky="true" />
+				<h:panelGrid columns="1">
+						<h:outputText value="#{msg.labelCorreo}"/>
+					<p:inputText style="width: 350px;" id="username" required="true" value="#{shiroBean.userName}"/>
+					<br/>
+									<h:outputText value="#{msg.labelContrasena}"/>
+					<p:password style="width: 350px;" id="password" required="true" value="#{shiroBean.userPassword}"/>
+					<br/>
+				</h:panelGrid>
+				<h:panelGrid columns="2">
+								<h:outputText value="#{msg.labelRecordar}"/>
+					<p:selectBooleanCheckbox id="rememberMe" value="#{shiroBean.rememberMe}"/>
+				</h:panelGrid>
+				<br/>
+				<h:outputText/>
+					<p:commandButton style="width: 350px;" value="#{msg.labelIngresar}" action="#{shiroBean.loginUser}" update="log"/>
+			</h:form>
+		</div>
+		<div class="push"/>
+	</div>
+	</h:body>
+</html>

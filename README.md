@@ -1,5 +1,8 @@
 # FindECI
 
+## Descripción del proyecto
+
+Por medio de esta aplicación, la comunidad estudiantil de la Escuela Colombiana de Ingenieria podra establecer citas y conversaciones por medio de sus redes sociales para conocersen y poder llegar a tener una relación del tipo que los usuarios deseen. Adicionalmente permite que las personas que se conozcan tengan gustos similares y congenien más de la cuenta. 
 
 
 ## Cronograma de Find Eci

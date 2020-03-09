@@ -10,7 +10,6 @@
 
 }
 
-
 #texto{
 
      font: bold 18px Tahoma;
@@ -25,6 +24,10 @@
 
 #down{
     margin: 8%
+}
+
+#downBox{
+    margin: 5%
 }
 
 #lado{

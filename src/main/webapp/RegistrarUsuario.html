@@ -21,18 +21,66 @@
         <h2 id="textoTitulos">¡Registrate, Conoceras muchas personas! </h2>
     </center>
 
-    <h2 id="textoTitulos">A continuacion ingresa la informacion personal para crear tu usuario </h2>
+    <center>
+        <h2 id="textoTitulos">A continuacion ingresa la informacion personal para crear tu usuario </h2>
+    </center>
 
     <div id="down">
-        <div class="input-group" id="center">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="texto">Primer y segundo nombre</span>
+        <div class="panel panel-default">
+            <div class="panel-heading"><h3 id="texto">Informacion Basica</h3></div>
+            <div class="panel-body">
+                <div class="input-group" id="downBox">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="texto">Primer y Segundo nombre: </span>
+                    </div>
+                    <div id="lado">
+                        <input type="text" class="form-control" placeholder="Primer Nombre">
+                    </div>
+                    <div id="lado">
+                        <input type="text" class="form-control" placeholder="Segundo Nombre (opcional)"
+                               style="margin-left: 30px">
+                    </div>
+
+                </div>
+                <div class="input-group" id="downBox">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="texto">Primer y Segundo apellido : </span>
+                    </div>
+
+                    <div id="lado">
+                        <input type="text" class="form-control" placeholder="Primer Apellido">
+                    </div>
+                    <div id="lado">
+                        <input type="text" class="form-control" placeholder="Segundo Apellido "
+                               style="margin-left: 30px">
+                    </div>
+                </div>
+
+                <div class="input-group" id="downBox">
+                    <div class="input-group-prepend" id="lado">
+                        <span class="input-group-text" id="texto">Genero: </span>
+
+                        <select class="form-control">
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                            <option>Otro</option>
+                        </select>
+
+                    </div>
+
+                    <div class="input-group-prepend" id="lado">
+                        <span class="input-group-text" id="texto">Fecha de Nacimiento: </span>
+
+                        <input type="date" name="cumpleanios" step="1" min="2013-01-01" max="2013-12-31" value="2013-01-01">
+
+                    </div>
+
+                </div>
+
+
             </div>
-            <input type="text" class="form-control" placeholder="Primer Nombre">
-            <input type="text" class="form-control" placeholder="Segundo Nombre (opcional)">
         </div>
     </div>
-</div>
 
 
 </body>
